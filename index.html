@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Build A Landing Page With Vue</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="vue.global.js"></script>
+
+</head>
+
+<body>
+	<h1>Frameworks de Desarrollo Web</h1>
+
+	<div id="cards-div">
+		<cards-component 
+		v-for="card in cards"
+		:title="card.title"
+		:link="card.link"
+		:text="card.text">
+		</cards-component>
+	</div>
+ 	<script src="script.js">
+	</script>
+</body>
+
+</html>
